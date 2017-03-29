@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "user" do
   it " visits /" do
 
-    fill_in "finder[zipcode]", with: "80203" 
+    fill_in "station[zipcode]", with: "80203" 
 
     click_on "Locate"
 
