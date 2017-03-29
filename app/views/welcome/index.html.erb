@@ -1,4 +1,3 @@
-<%= form_for @station do |f| %>
-<%=f.label :zipcode  %>
-<%= f.text_field :zipcode %>
-<% end %>
+<% @stations.each do |station| %>
+<%= station.name%>
+<% end%>

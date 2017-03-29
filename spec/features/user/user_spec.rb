@@ -1,9 +1,11 @@
 require 'rails_helper'
 
-describe "user" do
+describe "user" do  
   it " visits /" do
 
-    fill_in "station[zipcode]", with: "80203" 
+visit root_path 
+
+    fill_in 'station[zipcode]', with: "80203" 
 
     click_on "Locate"
 
