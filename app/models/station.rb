@@ -20,10 +20,10 @@ class Station
   end
 
 
-  def station_data
+  def self.station_data
+    fuel = FuelfinderService.new
     byebug
-    info = FuelFinder.new
-    data = info.all_stations
+    data = fuel.all_stations
     new(data)
   end
 

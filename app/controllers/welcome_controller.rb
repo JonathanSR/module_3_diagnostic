@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-    @station = Station.station_data
+    @stations = Station.station_data
+    byebug
   end
 
 end
